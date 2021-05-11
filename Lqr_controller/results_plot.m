@@ -1,0 +1,16 @@
+subplot(2,2,1)
+plot(t_out,x_out(:,1),t_out,bar.p*ones(length(t_out)))
+xlabel('Time');
+ylabel('p');
+subplot(2,2,2)
+plot(t_out,x_out(:,2),t_out,bar.q*ones(length(t_out)))
+xlabel('Time');
+ylabel('q');
+subplot(2,2,3)
+plot(t_out,x_out(:,3),t_out,bar.nx*ones(length(t_out)))
+xlabel('Time');
+ylabel('nx');
+subplot(2,2,4)
+plot(t_out,x_out(:,4),t_out,bar.ny*ones(length(t_out)))
+xlabel('Time');
+ylabel('ny');
